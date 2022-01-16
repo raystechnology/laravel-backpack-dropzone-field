@@ -2,6 +2,11 @@
 
 All notable changes will be documented in this file.
 
+## [4.0.0] - 2022-01-16
+
+### Updated
+- The package now support media library v9
+
 ## [3.0.0] - 2021-08-06
 
 ### Added

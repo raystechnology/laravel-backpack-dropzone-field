@@ -2,12 +2,14 @@
 
 Add Dropzone support for [Laravel Backpack](https://laravel-backpack.readme.io/docs).
 
+This package is a fork and upgrade of original package [gaspertrix/laravel-backpack-dropzone-field](https://github.com/Gaspertrix/laravel-backpack-dropzone-field).
+
 ## Requirements
 - [Laravel Backpack v4](https://laravel-backpack.readme.io/docs)
 	- [Installation](https://backpackforlaravel.com/docs/4.0/installation "Installation")
 	- [Getting Started](https://backpackforlaravel.com/docs/4.0/introduction "Getting Started")
-- [Spatie Laravel Medialibrary v7](https://docs.spatie.be/laravel-medialibrary/v7/)
-	- [Installation & setup](https://docs.spatie.be/laravel-medialibrary/v7/installation-setup "Installation & setup")
+- [Spatie Laravel Medialibrary v9](https://docs.spatie.be/laravel-medialibrary/v9/)
+	- [Installation & setup](https://docs.spatie.be/laravel-medialibrary/v9/installation-setup "Installation & setup")
 	- [Basic usage - Preparing your model](https://docs.spatie.be/laravel-medialibrary/v7/basic-usage/preparing-your-model "Basic usage - Preparing your model")
 
 ## Limitations
@@ -18,19 +20,19 @@ Currently, you can only manage media while editing an entry.
 ### Via Composer
 
 ``` bash
-composer require gaspertrix/laravel-backpack-dropzone-field:^3.0.0
+composer require raystechnology/laravel-backpack-dropzone-field:^4.0.0
 ```
 
 The package will automatically register itself.
 
 You must publish public assets:
 ``` bash
-php artisan gaspertrix:backpack:dropzone:install
+php artisan rays:backpack:dropzone:install
 ```
 
 You may publish views with:
 ``` bash
-php artisan vendor:publish --provider="Gaspertrix\LaravelBackpackDropzoneField\DropzoneFieldServiceProvider" --tag="views"
+php artisan vendor:publish --provider="Rays\LaravelBackpackDropzoneField\DropzoneFieldServiceProvider" --tag="views"
 ```
 
 ## Usage
@@ -48,7 +50,7 @@ For simplicity add the `MediaOperation` operation to EntityCrudController.
 class EntityCrudController extends CrudController
 {
 	...
-    use \Gaspertrix\LaravelBackpackDropzoneField\App\Http\Controllers\Operations\MediaOperation;
+    use \Rays\LaravelBackpackDropzoneField\App\Http\Controllers\Operations\MediaOperation;
 
 	...
 }
@@ -109,16 +111,16 @@ Please see [CONTRIBUTING](CONTRIBUTING.md) for details.
 
 ## Security
 
-If you discover any security related issues, please email adrian@gaspertrix.com instead of using the issue tracker.
+If you discover any security related issues, please email github-security@r4ys.com instead of using the issue tracker.
 
 ## Credits
 
-- [Adrian Sacchi][link-author]
+- [Hanlin Wang][link-author]
 - [All Contributors][link-contributors]
 
 ## License
 
 The MIT License (MIT). Please see [License File](LICENSE.md) for more information.
 
-[link-author]: https://github.com/gaspertrix
+[link-author]: https://github.com/wanghanlin
 [link-contributors]: ../../contributors

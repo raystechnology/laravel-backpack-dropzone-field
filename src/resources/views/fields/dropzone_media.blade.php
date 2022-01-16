@@ -56,14 +56,14 @@
     {{-- FIELD CSS - will be loaded in the after_styles section --}}
     @push('crud_fields_styles')
         <!-- include dropzone css-->
-        <link rel="stylesheet" href="{{ asset('vendor/gaspertrix/laravel-backpack-dropzone-field/dropzone/dropzone.min.css') }}" />
+        <link rel="stylesheet" href="{{ asset('vendor/rays/laravel-backpack-dropzone-field/dropzone/dropzone.min.css') }}" />
     @endpush
 
     {{-- FIELD JS - will be loaded in the after_scripts section --}}
     @push('crud_fields_scripts')
         <!-- include dropzone js-->
-        <script src="{{ asset('vendor/gaspertrix/laravel-backpack-dropzone-field/dropzone/dropzone.min.js') }}"></script>
-        <script src="{{ asset('vendor/gaspertrix/laravel-backpack-dropzone-field/sortable/Sortable.min.js') }}"></script>
+        <script src="{{ asset('vendor/rays/laravel-backpack-dropzone-field/dropzone/dropzone.min.js') }}"></script>
+        <script src="{{ asset('vendor/rays/laravel-backpack-dropzone-field/sortable/Sortable.min.js') }}"></script>
     @endpush
 
 @endif
