@@ -10,9 +10,9 @@ trait MediaOperation
     /**
      * Define which routes are needed for this operation.
      *
-     * @param string $segment    Name of the current entity (singular). Used as first URL segment.
-     * @param string $routeName  Prefix of the route name.
-     * @param string $controller Name of the current CrudController.
+     * @param  string  $segment  Name of the current entity (singular). Used as first URL segment.
+     * @param  string  $routeName  Prefix of the route name.
+     * @param  string  $controller  Name of the current CrudController.
      */
     protected function setupMediaRoutes($segment, $routeName, $controller)
     {
@@ -45,9 +45,8 @@ trait MediaOperation
     /**
      * Add file from the current request to the medialibrary.
      *
-     * @param Request $request [description]
-     * @param int     $id      [description]
-     *
+     * @param  Request  $request  [description]
+     * @param  int  $id  [description]
      * @return [type] [description]
      */
     public function uploadMedia(Request $request, $id)
@@ -65,9 +64,8 @@ trait MediaOperation
     /**
      * Delete file from the medialibrary.
      *
-     * @param Request $request [description]
-     * @param int     $id      [description]
-     *
+     * @param  Request  $request  [description]
+     * @param  int  $id  [description]
      * @return [type] [description]
      */
     public function reorderMedia(Request $request, $id)
@@ -84,9 +82,8 @@ trait MediaOperation
     /**
      * Delete file from the medialibrary.
      *
-     * @param Request $request [description]
-     * @param int     $id      [description]
-     *
+     * @param  Request  $request  [description]
+     * @param  int  $id  [description]
      * @return [type] [description]
      */
     public function deleteMedia(Request $request, $id)

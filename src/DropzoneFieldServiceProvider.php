@@ -2,8 +2,8 @@
 
 namespace Rays\LaravelBackpackDropzoneField;
 
-use Rays\LaravelBackpackDropzoneField\App\Console\Commands\Install;
 use Illuminate\Support\ServiceProvider;
+use Rays\LaravelBackpackDropzoneField\App\Console\Commands\Install;
 
 class DropzoneFieldServiceProvider extends ServiceProvider
 {
