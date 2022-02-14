@@ -30,7 +30,7 @@
     },
     "autoload": {
         "psr-4": {
-            "Rays\\LaravelBackpackDropzoneField\\App\\": "src/app/"
+            "Rays\\LaravelBackpackDropzoneField\\": "src/"
         }
     },
     "autoload-dev": {
